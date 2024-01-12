@@ -67,3 +67,35 @@ ul li a{
   width: 96%;
   margin: 2% ;
 }
+
+
+
+
+
+/* Media Queri for Small device */
+@media screen and (max-width:560px) {
+  nav{
+    flex-direction: column;
+  }
+  .brand_contant{
+    width: 90%;
+    margin: 10px;
+    line-height: 40px;
+  }
+  .btn_primary{
+    margin: 50px;
+  }
+}
+@media screen and (min-width:576.1px) and (max-width:768px) {
+  nav{
+    flex-direction: column;
+  }
+  .brand_contant{
+    width: 90%;
+    margin: 10px;
+    line-height: 40px;
+  }
+  .btn_primary{
+    margin-left: 130px;
+  }
+}
