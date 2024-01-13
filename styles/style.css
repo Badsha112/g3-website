@@ -111,17 +111,84 @@ main{
 }
 
 
+
+/* Feature part with Button style  */
+.feature_parent{
+  width: 90%;
+  margin:50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.feature{
+  width: 38%;
+  line-height: 30px;
+}
+.feature_image{
+  width: 48%;
+}
+.feature_image > img{
+  width: 100%;
+}
+.feature .feature_title{
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  border-left: 5px solid #FF900E;
+  padding-left: 15px;
+  line-height: 40px;
+}
+.feature_first_text{
+  margin-left: 20px;
+}
+.feature_image .btn > button{
+  background-color: #FF900E;
+  width: 320px;
+  height: 170px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  bottom: 100px;
+}
+.btn .badge{
+  color: #FFF;
+text-align: center;
+font-size: 65px;
+font-weight: 700;
+line-height: 70px;
+}
+.btn .p_tag_style{
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+/*  */
+
 /* Media Queri for Small device */
 @media screen and (max-width:560px) {
   nav,
-  .feature_section
+  .feature_section,
+  .feature_parent
   {
     flex-direction: column;
   }
   .feature_img{
     grid-template-columns: 1fr;
   }
-  .feature_text{
+ .feature_image .btn > button{
+    width: 270px;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    bottom: 100px;
+ }
+
+  .feature{
+    width: 90%;
+  }
+  .feature_text,
+  {
     width: 70%;
     margin-top: 20px;
   }
@@ -134,6 +201,8 @@ main{
     margin: 50px;
   }
 }
+
+
 /* Media Queri for Medium device */
 
 @media screen and (min-width:560.1px) and (max-width:992px) {
