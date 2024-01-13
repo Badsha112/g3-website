@@ -68,14 +68,62 @@ ul li a{
   margin: 2% ;
 }
 
-
-
+/* Main Part Style  */
+main{
+  width: 80%;
+  margin: 0 auto;
+}
+.feature_section{
+  display: flex;
+  justify-content: space-between;
+}
+.feature_img{
+  width: 38%;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 20px;
+}
+.feature_text{
+  width: 38%;
+  margin-top: 300px;
+}
+.feature_text > .btn_primary{
+  margin-left: 0;
+}
+.feature_text .p_tag_style{
+  color: #727272;
+  font-size: 1rem;
+}
+.quic{
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+.of{
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+.features{
+  color: #FF900E;
+  font-size: 45px;
+  font-weight: 700;
+}
 
 
 /* Media Queri for Small device */
 @media screen and (max-width:560px) {
-  nav{
+  nav,
+  .feature_section
+  {
     flex-direction: column;
+  }
+  .feature_img{
+    grid-template-columns: 1fr;
+  }
+  .feature_text{
+    width: 70%;
+    margin-top: 20px;
   }
   .brand_contant{
     width: 90%;
@@ -86,9 +134,16 @@ ul li a{
     margin: 50px;
   }
 }
-@media screen and (min-width:576.1px) and (max-width:768px) {
-  nav{
+/* Media Queri for Medium device */
+
+@media screen and (min-width:560.1px) and (max-width:992px) {
+  nav,
+  .feature_section{
     flex-direction: column;
+  }
+  .feature_text{
+    width: 90%;
+    margin-top: 20px;
   }
   .brand_contant{
     width: 90%;
