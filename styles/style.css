@@ -154,3 +154,14 @@ main{
     margin-left: 130px;
   }
 }
+/* Media Queri for Large device */
+@media screen and (min-width:992.1px) and (max-width:1200px) {
+  .feature_section{
+    flex-direction: column;
+    margin-left:100px ;
+  }
+  .feature_text{
+    width: 90%;
+    margin-top: 20px;
+  }
+}
