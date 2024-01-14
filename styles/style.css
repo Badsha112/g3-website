@@ -262,6 +262,9 @@ footer p{
   .feature_img{
     grid-template-columns: 1fr;
   }
+  .feature_image > img{
+    width: 80%;
+  }
  .feature_image .btn > button{
     width: 270px;
     height: 120px;
